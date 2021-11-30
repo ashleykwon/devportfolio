@@ -166,7 +166,7 @@
                             to visualize collaboration relationships among authors and each author's amount of publications
                             in the form of a forest where a tree represents an author and its leaf clusters represent publications
                         </p>
-                        <a href="#">View Project</a>
+                        <a class = 'view_project_btn' data-modal = 'forest'>View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -276,61 +276,78 @@
     <!-- End #contact -->
 
     <!--Popup descriptions-->
-    <div class = "modal-bg"  id = 'bisociation'>
+    <div class = "modal-bg"  id = 'forest'>
         <div class = "modal">
-            <h2>Bi-sociation Generator Using a Knowledge Graph Structure</h2>
+            <h2>Visualization of Author Collaboration and Publication Relationships – Insight Engine 2.0</h2>
             <p>
-                Arthur Koestler, in his 1964 book, The Act of Creation, discusses the term “bi-sociation”, 
-                which is a process of finding connections between two seemingly unrelated contexts.
-                  Koestler claims that this discovery is the basis of creative acts.
-                   Drawing inspiration from bi-sociation, poly-association is a term that Prof. Bill Seaman coined. 
-                It refers to the process of associating two more contexts to find connections among them. 
+                In existing search platforms, users can look for papers about a certain topic, 
+                specific authors, and their publications. 
+                However, they cannot visualize influential authors 
+                with frequent collaborations in an academic field that conducts research 
+                in the searched topic since search results in most platforms appear in a vertical list.
                 <br><br>
-                As a member of Prof. Bill Seaman’s Insight Engine team, 
-                I collaboratively designed an interface with another Duke undergraduate student to visualize 
-                the poly-association process. The model has an underlying graph structure represented below, 
-                where a node represents a concept related to philosophy or 18th-19th century French politics and art. 
-                A directed edge between two nodes explains how those two concepts are related. 
-                In the poly-association interface, the user can choose two or more concepts to visualize their relationships. 
-                The backend algorithm of the interface finds the shortest path between every possible pair 
-                of chosen concepts and visualizes values of all nodes and edges in the path on the 
-                right-hand side of the interface. 
+                As a member of Duke’s Insight Engine team led by Prof. Bill Seaman, 
+                I wanted to build an advanced search tool that visualizes relationships among authors, 
+                publications, and research topics in ways that are easy for users to understand. 
+                After thinking about multiple ways to do so, I decided to adapt the form of a forest, 
+                which is familiar to most people.
                 <br><br>
-                I presented this interface at the Theoretical and Foundational Problems in Information Studies conference,
-                 introducing its participants to a novel way of visualizing poly-associations in a digital platform. My presentation linked here and my extended abstract linked here describe the interface in more detail.
+                The interface of the model receives from its user one author’s name for whom they want 
+                to visualize publication and collaboration relationships. 
+                Then it visualizes the searched author as a tree in the center of the forest; 
+                other authors who have published at least one paper with the author are visualized 
+                as other trees at varying distances from the central tree, 
+                depending on the number of the corresponding authors’ collaborations with the central author. 
+                Each tree also has different numbers of leaf clusters attached to it, 
+                depending on the number of publications the corresponding author published in different journals. 
+                By entering the search tool’s explore mode, users can also virtually walk around 
+                the generated forest and click different trees and its leaf clusters to see authors 
+                and the publications they represent.
                 <br><br>
-                Learning about ways to bridge concepts from multiple disciplines through this project, 
-                I was inspired to continue to find connections among different academic topics and to 
-                create interdisciplinary research ideas.
+                Presenting the model at an international-level conference in information science, 
+                the Theoretical and Foundational Problems in Information Studies conference (TFPIS) conference, 
+                I introduced participants to a new use of a game engine as 
+                a search tool and inspired them to use my forest model to represent different types of data. 
+                You can view my presentation here and my extended abstract here. 
+                I also started leading a group with two PhD students to explore additional metaphors, 
+                and add more interactive elements to the forest — 
+                We are seeking to model such elements as winds that represent research trends/directions. 
+                We are using the Unity Game Engine as our visualization platform. 
+                This is enabling us to explore entirely new visualization strategies, 
+                and in particular aspects of multi-perspective views, physics engines and 3d landscape qualities.
+                <br><br>
+                This project was particularly meaningful to me in that 
+                it enabled me to discover innovative uses game engines and new opportunities 
+                that I can create for other people by sharing my discoveries.
             </p>
-            <img src="images/graph.png" width = "625" height = "374"/>
-            <span class = "modal-close" data-modal = 'bisociation'> X </span>
+            <span class = "modal-close" data-modal = 'forest'> X </span>
         </div>
     </div>
-
 
     <div class = "modal-bg"  id = 'artrec'>
         <div class = "modal">
             <h2>Contemporary Art Recommendation System</h2>
             <p>
-                Studying about careers of contemporary artists, 
-                I realized that obtaining the status as a “pioneer” artist is correlated 
-                more with joining a network of influential dealers and obtaining exhibition 
-                opportunities at a few major institutions than with creativity and artistic skills. 
-                The findings inspired me to design a platform for artists in “peripheral” communities 
-                with limited access to renowned art institutions and dealers that raises awareness about their work. 
+                Studying about careers of contemporary artists, I realized that obtaining the status as 
+                a “pioneer” artist is correlated more with joining a network of 
+                influential dealers and obtaining exhibition opportunities 
+                at a few major institutions than with creativity and artistic skills. 
+                The findings inspired me to design a new kind of platform for artists 
+                in “peripheral” communities with limited access to renowned art institutions and dealers. 
+                The goal was to raise awareness about their work. 
                 <br><br>
                 As a part of my senior thesis project for art history under the supervision of Prof. Bill Seaman, 
                 I built a website that recommends artworks of young contemporary artists 
                 based on users’ preferences in terms of extrinsic and intrinsic characteristics of artworks. 
                 The backend program of the website draws its inspiration from human brains’ visual processing steps, 
-                which, according to Eric Kandel’s book, The Age of Insight, involves 
-                perceiving colors first and then edges and finally recognizing specific objects. 
-                The program abstracts and re-purposes algorithms in computer vision 
-                such as Haralick texture analysis and edge detection and an object detection network, 
+                which, according to Eric Kandel’s book, 
+                <a href = "https://www.goodreads.com/book/show/12263681-the-age-of-insight">The Age of Insight</a>, 
+                involves perceiving colors first and then edges and finally recognizing specific objects. 
+                The program abstracts and re-purposes algorithms in computer vision such as Haralick texture analysis 
+                and edge detection and an object detection network, 
                 ResNet50 to numerically characterize visible characteristics of artworks. 
-                It also uses recommendation techniques involving tags to capture invisible qualities 
-                such as creative purposes and artistic movements.
+                It also uses recommendation techniques involving textual tags to capture 
+                invisible qualities such as creative purposes and artistic movements.
                 <br><br>
                 This project was a great opportunity for me to use an interdisciplinary approach, 
                 involving research in art history, computer science, and neuroscience, 
@@ -341,6 +358,40 @@
             <span class = "modal-close" data-modal = 'artrec'> X </span>
         </div>
     </div>
+
+    <div class = "modal-bg"  id = 'bisociation'>
+        <div class = "modal">
+            <h2>Bi-sociation Generator Using a Knowledge Graph Structure</h2>
+            <p>
+                Arthur Koestler, in his 1964 book, <a href = "https://en.wikipedia.org/wiki/The_Act_of_Creation">The Act of Creation</a>, 
+                discusses the term “bi-sociation”, which is a process of finding connections between two seemingly unrelated contexts. 
+                Koestler claims that this discovery is the basis of creative acts. 
+                Drawing inspiration from bi-sociation, poly-association is a term that Prof. Bill Seaman coined. 
+                It refers to the process of associating two more contexts to find connections among them. 
+                <br><br>
+                As a member of Prof. Bill Seaman’s Insight Engine team, 
+                I collaboratively designed an interface with another Duke undergraduate student 
+                to visualize the poly-association process. 
+                The model has an underlying graph structure represented below, 
+                where a node represents a concept related to philosophy or 18th-19th century French politics and art. 
+                A directed edge between two nodes explains how those two concepts are related. 
+                <br><br>
+                In the poly-association interface, the user can choose two or more concepts to visualize their relationships. 
+                The backend algorithm of the interface finds the shortest path between every possible pair of chosen concepts 
+                and visualizes values of all nodes and edges in the path on the right-hand side of the interface. 
+                The exciting thing is that this process enables conceptual bridges across disciplinary domains 
+                that might normally be missed!
+                <br><br>
+                I presented this interface at the Theoretical and Foundational Problems in Information Studies conference, 
+                introducing its participants to a novel way of visualizing poly-associations in a digital platform. 
+                My presentation linked <a href = "https://vimeo.com/608448162">here</a> and my extended abstract 
+                linked <a href = "https://tfpiscom.files.wordpress.com/2021/07/kwon.pdf">here</a> describe the interface in more detail.
+            </p>
+            <img src="images/graph.png" width = "625" height = "374"/>
+            <span class = "modal-close" data-modal = 'bisociation'> X </span>
+        </div>
+    </div>
+    <!--End popup descriptions-->
 
     
     <footer>

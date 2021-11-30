@@ -18,11 +18,14 @@
     opacity: 1;
 }
 
+.view_project_btn{
+    cursor:pointer;
+}
 
 .modal{
     position:relative;
     background-color:white;
-    padding: 20px;
+    padding: 30px;
     width: 85%;
     height: 85vh;
     display:flex;
