@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,14 +29,14 @@
                 <a href="#about">About</a>
             </li>
             <li>
+                <a href="#projects">Portfolio</a>
+            </li>
+            <li>
                 <a href="#experience">Experience</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+            </li> -->
             <li>
                 <a href="#skills">Skills</a>
             </li>
@@ -48,9 +49,8 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <h1>Hojung (Ashley) Kwon</h1><br>
+            <a href="#" class="btn-rounded-white">Download CV</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,9 +73,9 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I am an undergraduate student at Duke University double majoring in Computer Science and Art History. 
+                        My research interests include Augmented Reality (AR) and Virtual Reality (VR) technologies for 
+                        small electronic devices, human computer interactions, and game engines.
                     </p>
                 </div>
             </div>
@@ -83,6 +83,137 @@
     </div>
     <!-- End #about -->
 
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Portfolio</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/jacopino.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Digital Restoration of Early Renaissance Paintings</h3>
+                        <p>
+                            Virtual restoration project where I recolored faded colors of figures in a 14th century Italian wood panel painting and rendered its gilded background in a 3D modeling application
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>AR-based Labeling for DNN Fine-Tuning</h3>
+                        <p>
+                            Smartphone AR application that uses a fine-tuned Faster RCNN model and AR to reduce the amount of time
+                            taken to generate image labels for a training dataset.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/polar_angle.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Characterization of User Movements in Desktop VR Simulations</h3>
+                        <p>
+                            Data collection project where I built three Desktop VR simulations, using open source assets
+                            in Unity, and characterized users' viewing angle changes and travel patterns in them
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/artict.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Pigment Separation Using X-Ray Elemental Maps of a Painting</h3>
+                        <p>
+                            Designed an algorithm that uses RGB image of a painting and grayscale images showing areas where 
+                            different chemicals were detected to generate images showing where different pigments were used in a painting
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/forest.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Visualization of Author Collaboration and Publication Relationship Using a Game Engine</h3>
+                        <p>
+                            Used a game engine, Unity, and publication data of more than 2 million papers from the ACM journal
+                            to visualize collaboration relationships among authors and each author's amount of publications
+                            in the form of a forest where a tree represents an author and its leaf clusters represent publications
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/artict.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Contemporary Art Recommendation System</h3>
+                        <p>
+                            A platform that recommends paintings of contemporary artists that were born in the 1980s or later based on 
+                            users' preferences in extrinsic and intrinsic characteristics of artworks to raise awareness about 
+                            the works of emerging artists
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                 <!-- End .project -->
+                 <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/bi-sociation.png" width = "300" height = "300"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Bi-sociation Generator Using a Knowledge Graph Structure</h3>
+                        <p>
+                            To facilitate the process of discovering connections between two seemingly unrelated concepts,
+                             my teammate I made an interface whose backend program uses the shortest path algorithm
+                             to visualize connections between two or more concepts that the user selects
+                        </p>
+                        <a class = 'view_project_btn'>View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <!--experience-->
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
@@ -106,138 +237,104 @@
                 <h3>Employer Name</h3>
                 <h4>Job Title</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. 
+                    Curabitur in iaculis ex. 
+                    Etiam volutpat laoreet urna. 
+                    Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. 
+                    Fusce eget efficitur libero.
+                     Morbi dapibus porta quam laoreet placerat.
                 </p>
             </div>
         </div>
     </div>
     <!-- End #experience -->
 
-    <div id="education">
+    <!-- <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h3>Duke University</h3>
+            <span class="education-date">Aug 2017 - Dec 2021</span>
             <h4>Bachelor of Science in Computer Science</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                Senior thesis 
             </p>
-        </div>
+            <h4>Bachelor of Arts in Art History</h4>
+            <p>
+                Senior thesis 
+            </p>
+        </div> -->
         <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
+    <!-- </div> -->
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+   
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
             <li>Java</li>
             <li>C</li>
-            <li>C#</li>
             <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
             <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
             <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>Unity</li>
+            <li>Git</li>
         </ul>
     </div>
     <!-- End #skills -->
 
     <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+        <h2>Contact</h2>
+        <h3>akwon90211@gmail.com </h3>
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
 
+
+    <div class = "modal-bg">
+        <div class = "modal">
+            <h2>Bi-sociation Generator Using a Knowledge Graph Structure</h2>
+            <p>
+                Arthur Koestler, in his 1964 book, The Act of Creation, discusses the term “bi-sociation”, 
+                which is a process of finding connections between two seemingly unrelated contexts.
+                  Koestler claims that this discovery is the basis of creative acts.
+                   Drawing inspiration from bi-sociation, poly-association is a term that Prof. Bill Seaman coined. 
+                It refers to the process of associating two more contexts to find connections among them. 
+                <br><br>
+                As a member of Prof. Bill Seaman’s Insight Engine team, 
+                I collaboratively designed an interface with another Duke undergraduate student to visualize 
+                the poly-association process. The model has an underlying graph structure represented below, 
+                where a node represents a concept related to philosophy or 18th-19th century French politics and art. 
+                A directed edge between two nodes explains how those two concepts are related. 
+                In the poly-association interface, the user can choose two or more concepts to visualize their relationships. 
+                The backend algorithm of the interface finds the shortest path between every possible pair 
+                of chosen concepts and visualizes values of all nodes and edges in the path on the 
+                right-hand side of the interface. 
+                <br><br>
+                I presented this interface at the Theoretical and Foundational Problems in Information Studies conference,
+                 introducing its participants to a novel way of visualizing poly-associations in a digital platform. My presentation linked here and my extended abstract linked here describe the interface in more detail.
+                <br><br>
+                Learning about ways to bridge concepts from multiple disciplines through this project, 
+                I was inspired to continue to find connections among different academic topics and to 
+                create interdisciplinary research ideas.
+
+            </p>
+            <span class = "modal-close"> X </span>
+        </div>
+    </div>
+
+    
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2021 Hojung (Ashley) Kwon
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -248,22 +345,10 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ashleykwon/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/ashley-hojung-kwon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -274,6 +359,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src = "js/toggle.js"></script>
 </body>
 
 </html>
