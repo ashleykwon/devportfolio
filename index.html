@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Hojung Ashley Kwon</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -184,7 +184,7 @@
                             users' preferences in extrinsic and intrinsic characteristics of artworks to raise awareness about 
                             the works of emerging artists
                         </p>
-                        <a href="#">View Project</a>
+                        <a class = 'view_project_btn' data-modal = 'artrec'>View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -203,7 +203,7 @@
                              my teammate I made an interface whose backend program uses the shortest path algorithm
                              to visualize connections between two or more concepts that the user selects
                         </p>
-                        <a class = 'view_project_btn'>View Project</a>
+                        <a class = 'view_project_btn' data-modal = 'bisociation'>View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -214,7 +214,7 @@
     <!-- End #projects -->
 
     <!--experience-->
-    <div id="experience" class="background-alt">
+    <!-- <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="September 2015 – September 2016">
@@ -243,32 +243,12 @@
                     Etiam volutpat laoreet urna. 
                     Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. 
                     Fusce eget efficitur libero.
-                     Morbi dapibus porta quam laoreet placerat.
+                    Morbi dapibus porta quam laoreet placerat.
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End #experience -->
-
-    <!-- <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Duke University</h3>
-            <span class="education-date">Aug 2017 - Dec 2021</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Senior thesis 
-            </p>
-            <h4>Bachelor of Arts in Art History</h4>
-            <p>
-                Senior thesis 
-            </p>
-        </div> -->
-        <!-- End .education-block -->
-    <!-- </div> -->
-    <!-- End #education -->
-
-   
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
@@ -295,8 +275,8 @@
     </div>
     <!-- End #contact -->
 
-
-    <div class = "modal-bg">
+    <!--Popup descriptions-->
+    <div class = "modal-bg"  id = 'bisociation'>
         <div class = "modal">
             <h2>Bi-sociation Generator Using a Knowledge Graph Structure</h2>
             <p>
@@ -322,9 +302,43 @@
                 Learning about ways to bridge concepts from multiple disciplines through this project, 
                 I was inspired to continue to find connections among different academic topics and to 
                 create interdisciplinary research ideas.
-
             </p>
-            <span class = "modal-close"> X </span>
+            <img src="images/graph.png" width = "625" height = "374"/>
+            <span class = "modal-close" data-modal = 'bisociation'> X </span>
+        </div>
+    </div>
+
+
+    <div class = "modal-bg"  id = 'artrec'>
+        <div class = "modal">
+            <h2>Contemporary Art Recommendation System</h2>
+            <p>
+                Studying about careers of contemporary artists, 
+                I realized that obtaining the status as a “pioneer” artist is correlated 
+                more with joining a network of influential dealers and obtaining exhibition 
+                opportunities at a few major institutions than with creativity and artistic skills. 
+                The findings inspired me to design a platform for artists in “peripheral” communities 
+                with limited access to renowned art institutions and dealers that raises awareness about their work. 
+                <br><br>
+                As a part of my senior thesis project for art history under the supervision of Prof. Bill Seaman, 
+                I built a website that recommends artworks of young contemporary artists 
+                based on users’ preferences in terms of extrinsic and intrinsic characteristics of artworks. 
+                The backend program of the website draws its inspiration from human brains’ visual processing steps, 
+                which, according to Eric Kandel’s book, The Age of Insight, involves 
+                perceiving colors first and then edges and finally recognizing specific objects. 
+                The program abstracts and re-purposes algorithms in computer vision 
+                such as Haralick texture analysis and edge detection and an object detection network, 
+                ResNet50 to numerically characterize visible characteristics of artworks. 
+                It also uses recommendation techniques involving tags to capture invisible qualities 
+                such as creative purposes and artistic movements.
+                <br><br>
+                This project was a great opportunity for me to use an interdisciplinary approach, 
+                involving research in art history, computer science, and neuroscience, 
+                to address an issue that underrepresented groups of young artists face. 
+                The project also inspired me to design other digital interfaces 
+                that can help marginalized communities tackle their problems.
+            </p>
+            <span class = "modal-close" data-modal = 'artrec'> X </span>
         </div>
     </div>
 

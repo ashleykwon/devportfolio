@@ -1,12 +1,22 @@
 var modalBG = document.querySelector('.modal-bg');
-var modalBtn = document.querySelector('.view_project_btn');
-var modalClose = document.querySelector('.modal-close');
+var modalBtn = document.querySelectorAll('.view_project_btn');
+var modalClose = document.querySelectorAll('.modal-close');
 
-modalBtn.addEventListener('click', function () {
-    modalBG.classList.add('bg-active');
-})
+modalBtn.forEach(function(btn){
+    btn.onclick = function(){
+        var modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).classList.add('bg-active');
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100%";
+    };
+});
 
-modalClose.addEventListener('click', function () {
-    modalBG.classList.remove('bg-active');
-})
 
+modalClose.forEach(function(btn){
+    btn.onclick = function(){
+        var modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).classList.remove('bg-active');
+        document.body.style.overflow = "auto"; 
+        document.body.style.height = "auto";  
+    };
+});
